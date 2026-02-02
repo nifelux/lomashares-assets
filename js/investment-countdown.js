@@ -1,6 +1,6 @@
 // LomaShares Investment Maturity Countdown
 
-const maturityDate = new Date("2026-01-15T00:00:00").getTime();
+const maturityDate = new Date("2026-02-15T00:00:00").getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
