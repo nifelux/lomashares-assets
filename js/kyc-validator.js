@@ -8,12 +8,12 @@ function validateBVN_NIN(value) {
 
     // BVN rule: 11 digits, not starting with 0
     if (value[0] !== "0") {
-        return { valid: true, type: "BVN", message: "Valid BVN format" };
+        return { valid: true, type: "BVN", message: "Valid BVN/NIN format" };
     }
 
     // NIN rule: 11 digits, usually starts with 1 or 2
     if (value.startsWith("1") || value.startsWith("2")) {
-        return { valid: true, type: "NIN", message: "Valid NIN format" };
+        return { valid: true, type: "NIN", message: "Valid NIN/BVN format" };
     }
 
     return { valid: false, message: "Invalid BVN/NIN format" };
